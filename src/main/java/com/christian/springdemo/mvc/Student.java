@@ -1,18 +1,10 @@
 package com.christian.springdemo.mvc;
 
-import java.util.LinkedHashMap;
 
 public class Student {
 	private String firstName;
 	private String lastName;
 	private String country;
-	
-	private LinkedHashMap <String,String> countryOptions;
-
-	
-	public LinkedHashMap<String, String> getCountryOptions() {
-		return countryOptions;
-	}
 
 	public String getFirstName() {
 		return firstName;
@@ -31,12 +23,6 @@ public class Student {
 	}
 
 	public Student() {
-		
-		countryOptions = new LinkedHashMap<>();
-		countryOptions.put("BR", "Brazil");
-		countryOptions.put("CA", "Canada");
-		countryOptions.put("FR", "France");
-		countryOptions.put("JP", "Japan");
 		
 	}
 
