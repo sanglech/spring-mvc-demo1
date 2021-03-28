@@ -25,6 +25,14 @@
 	
 	
 	<br></br>
+	
+	Favourite Language:
+	
+	Java <form:radiobutton path="favCodingLang" value="Java"/>
+	PHP <form:radiobutton path="favCodingLang" value="PHP"/>
+	Python <form:radiobutton path="favCodingLang" value="Python"/>
+	C++ <form:radiobutton path="favCodingLang" value="C++"/>
+	<br></br>
 
 	<input type="submit" value="Submit" />
 </form:form>
