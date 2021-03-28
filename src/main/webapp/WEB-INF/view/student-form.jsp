@@ -30,6 +30,16 @@
 	<form:radiobuttons path="favCodingLang" items="${student.favoriteLanguageOptions}"  />
 	
 	<br></br>
+	
+	Operating Systems Familiar with:
+	Linux <form:checkbox path="OSfamiliar" value="Linux" />
+	MacOS <form:checkbox path="OSfamiliar" value="MacOS" />
+	MS Windows <form:checkbox path="OSfamiliar" value="MS" />
+	
+	
+	
+	
+	<br></br>
 
 	<input type="submit" value="Submit" />
 </form:form>

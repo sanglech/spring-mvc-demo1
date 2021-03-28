@@ -1,5 +1,6 @@
 package com.christian.springdemo.mvc;
 
+import java.util.ArrayList;
 import java.util.LinkedHashMap;
 
 public class Student {
@@ -7,6 +8,7 @@ public class Student {
 	private String lastName;
 	private String country;
 	private String favCodingLang;
+	private ArrayList<String> OSfamiliar;
 	
 	private LinkedHashMap<String, String> favoriteLanguageOptions;
 
@@ -56,5 +58,13 @@ public class Student {
 
 	public void setCountry(String country) {
 		this.country = country;
+	}
+
+	public ArrayList<String> getOSfamiliar() {
+		return OSfamiliar;
+	}
+
+	public void setOSfamiliar(ArrayList<String> oSfamiliar) {
+		OSfamiliar = oSfamiliar;
 	}
 }
