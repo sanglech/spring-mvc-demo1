@@ -6,6 +6,8 @@ import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Pattern;
 import javax.validation.constraints.Size;
 
+import com.christian.springdemo.mvc.validation.CourseCode;
+
 public class Customer {
 	
 	private String firstName;
@@ -19,6 +21,9 @@ public class Customer {
 	@NotNull (message="is required")
 	@Size(min=1,message="is required")
 	private String lastName;
+	
+	@CourseCode //overwrites the class default if specified
+	private String courseCode;
 	
 	
 	@Pattern(regexp="^[a-zA-Z0-9]{5}",message="only take 5 characters/digits")
@@ -49,4 +54,12 @@ public class Customer {
 	public void setFreePasses(Integer freePasses) {
 		this.freePasses = freePasses;
 	}
+	public String getCourseCode() {
+		return courseCode;
+	}
+	public void setCourseCode(String courseCode) {
+		this.courseCode = courseCode;
+	}
+	
+	
 }
