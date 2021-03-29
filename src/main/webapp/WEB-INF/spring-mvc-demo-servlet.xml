@@ -22,6 +22,16 @@
 	
 	<!-- Bonus: add propertiesFile for reading Data -->
 	<util:properties  id="countryOptions" location="classpath:../countries.properties" /> 
+	
+	
+	<!-- Bonus adding validation properties file -->
+
+    <bean id="messageSource" 
+          class="org.springframework.context.support.ResourceBundleMessageSource">    
+        <property name="basenames" value="resources/messages" />
+     
+    </bean>
+    
 	<!-- Step 5: Define Spring MVC view resolver -->
 	<bean
 		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
